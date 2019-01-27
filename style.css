@@ -1,0 +1,233 @@
+@import url("keyframes.css");
+
+html { 
+  background: url(55555.jpg) no-repeat center center fixed; 
+  background-size: cover;
+}
+h4{
+text-align: center;
+font-size: 45px;
+margin: 0.07in;
+text-decoration-style: bold;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: rgb(0, 0, 0);
+text-align: ltr;
+}
+
+#container {
+border-block-end: #ffffff 2px;
+background-position: auto;
+}
+
+#header {
+text-align: center;
+font-display: center;
+}
+
+
+#toDoList {
+text-align: center;
+
+
+}
+
+/* THE SCROLL BAR */
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px rgba(255, 255, 255, 0);
+  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 0, 0);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  /* Handle on hover */
+  background: rgb(0, 0, 0);
+}
+
+
+.clear {
+  width: auto;
+  height: auto;
+  padding: 5px;
+ 
+}
+
+body {
+  width: auto;
+  height: auto;
+  color: rgb(255, 255, 255);
+  font-family: cursive;
+  position: relative;
+}
+
+
+#container {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  display: block;
+}
+
+#container::before {
+  width: 250%;
+  height: 250%;
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  z-index: -1;
+  display: block;
+  background-size: cover;
+  background-position: center top;
+
+}
+
+/*----------------------- 
+**     The Form       ***
+-----------------------*/
+
+
+
+
+input {
+
+  outline: auto;
+  width: 5.8in;
+  height: 0.93in;
+  background-image: url(66.jpg);
+  background-position: 10%;
+  margin-left: 0.2in;
+  text-align: ltr;
+  text-align: start;
+  position: center;
+  letter-spacing: 0.03in;
+  line-height: 80%
+ 
+}
+
+
+#taskTime {
+width: 1.6in;
+height: auto;
+position: left;
+}
+
+#untilTask{
+height: auto;
+width: auto;
+position: left;
+display: -ms-grid;
+}
+
+.placeTop {
+  display: auto;
+  width: auto;
+  height: auto;
+  position: center;
+
+}
+
+
+
+
+
+/*----------------
+    The Notes
+-----------------*/
+#noteContainer {
+  width: auto;
+  height: auto;
+  padding: 50px 0px;
+  margin: .1in;
+  margin-bottom: 1in;
+  margin-top: .1in;
+  text-align: center;
+  direction: ltr;
+}
+
+
+.note {
+  width: 180px;
+  height: 200px;
+  margin-right: 35px;
+  background-color: rgb(228, 230, 157);
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  position: relative;
+  margin-bottom: 0.5in;
+
+}
+
+
+.note:first {
+  margin: 1;
+}
+
+.note:hover .x {
+  display: block;
+  -webkit-animation: fadeIn 1.2s;
+  animation: fadeIn 1.2s;
+}
+
+.note:hover .noteDate {
+  display: block;
+}
+
+p.noteText {
+  background: transparent;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  text-overflow: clip;
+  word-wrap: break-word;
+  position: absolute;
+  font-family: cursive;
+  text-align: rtl;
+  padding-right: 20px;
+  top: 0%;
+  right: 0;
+  width: 140px;
+  height: 110px;
+  margin-bottom: 0.3in;
+  margin-top: 0.3in;
+}
+
+.noteDate {
+  position: absolute;
+  bottom: 1px;
+  left: 10px;
+  font-size: 14px;
+  display: flex;
+  color: #000000;
+}
+
+#clearStorage {
+  display: ruby-base-container;
+  position: initial;
+  bottom: 95px;
+  left: 50px;
+  border-radius: 10px 20px;
+  cursor: pointer;
+  background-color: rgb(155, 155, 155);
+}
+
+#clearStorage:hover {
+ 
+  background: linear-gradient(to right, rgb(255, 255, 255) 30%, #e7fc9b 100%);
+ align-self: auto;
+
+}
+/*# sourceMappingURL=style.css.map */
